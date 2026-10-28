@@ -143,7 +143,7 @@ async function seedEvents() {
 }
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(MONGODB_URI, { dbName: 'campusfest' })
   .then(async () => {
     console.log('Connected to MongoDB');
     await seedEvents();
