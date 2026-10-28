@@ -85,9 +85,11 @@ To use another database, create a `.env` file with `MONGODB_URI=...`.
 
 ## Deployment
 
+**Live URL:** https://campusfest.onrender.com
+
 - **Database:** MongoDB Atlas free cluster. Its connection string is set as the `MONGODB_URI` environment variable on Render.
-- **Website:** Render Web Service connected to this GitHub repo.
+- **Website:** Render Web Service (free plan, Singapore) built from this GitHub repo.
   - Build command: `npm install && npm run build`
   - Start command: `npm start`
-- Every push to GitHub redeploys automatically.
+- After pushing changes to GitHub, open the service on Render and click **Manual Deploy → Deploy latest commit**.
 - Note: free Render sites sleep after 15 minutes of no visitors. The first visit after that takes about 30–50 seconds to load.
