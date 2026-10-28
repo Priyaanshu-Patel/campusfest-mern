@@ -1,0 +1,21 @@
+{
+  "name": "campusfest-mern",
+  "version": "1.0.0",
+  "description": "CampusFest - College Event Management website (MERN stack mini project)",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "npm install --prefix client --include=dev && npm run build --prefix client",
+    "start": "node server/index.js",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "npm run dev --prefix client"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0"
+  }
+}
